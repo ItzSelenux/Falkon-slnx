@@ -9,38 +9,43 @@ icon set
 
 #navigation-button-back
 {
-    qproperty-themeIcon: "go-previous";
+    qproperty-multiIcon: url(images/tab-left-arrow.svg);
 }
 
 #navigation-button-next
 {
-    qproperty-themeIcon: "go-next";
+    qproperty-multiIcon: url(images/tab-right-arrow.svg);
 }
+
 
 #navigation-button-stop
 {
-    qproperty-themeIcon: "process-stop";
+    image: url(images/process-stop.svg);
+    qproperty-fixedsize: 22px 22px;
 }
 
 #navigation-button-reload
 {
-    qproperty-themeIcon: "view-refresh";
+    image: url(images/view-refresh.svg);
+    qproperty-fixedsize: 22px 22px;
 }
 
 #navigation-button-home
 {
-    qproperty-themeIcon: "go-home";
+    image: url(images/go-home.svg);
+		qproperty-fixedsize: 22px 22px;
 }
 
 #navigation-button-addtab
 {
-    qproperty-themeIcon: "list-add";
+    image: url(images/list-add.svg);
+    qproperty-fixedsize: 22px 22px;
 }
 
 #navigation-button-tools
 {
-    qproperty-themeIcon: url(images/tools.svg);
-    qproperty-fallbackIcon: url(images/tools.svg);
+    image: url(images/tools.svg);
+		qproperty-fixedsize: 22px 22px;
 }
 
 #navigation-button-exitfullscreen
@@ -51,8 +56,8 @@ icon set
 
 #navigation-button-supermenu
 {
-    qproperty-themeIcon: url(images/menu.svg);
-    qproperty-fallbackIcon: url(images/menu.svg);
+    image: url(images/menu.svg);
+		qproperty-fixedsize: 22px 22px;
 }
 
 #navigation-toolbutton-badge
@@ -65,19 +70,6 @@ icon set
 ToolButton[button-id="button-downloads"]
 {
     qproperty-themeIcon: "edit-download";
-}
-
-/*TabWidget*/
-#tabbar-button-right
-{
-    qproperty-themeIcon: url(images/tab-right-arrow.svg);
-    qproperty-fixedsize: 15px 25px;
-}
-
-#tabbar-button-left
-{
-    qproperty-themeIcon: url(images/tab-left-arrow.svg);
-    qproperty-fixedsize: 15px 25px;
 }
 
 #tabbar::close-button
@@ -172,14 +164,12 @@ BrowsingLibrary #frame
 {
     background: url(images/semi-transp.png);
 }
-
-
 /****************************************/
 
 
 
 *[html-link-look="true"] {
-    color: red;
+    color: #f0f0f0;
     text-decoration: underline;
 }
 *[font] {
@@ -448,7 +438,6 @@ BrowsingLibrary, BrowsingLibrary #frame_2, BrowsingLibrary #frame, BrowsingLibra
     background: #373737;
 	color: #FFFFFF;
     border: 1px solid #5B5B5B;
-    min-height: 25px;
     qproperty-leftMargin: 20;
 }
 
@@ -758,13 +747,6 @@ Preferences #line, Preferences #line_2, #stackedWidget {
 QTabWidget::pane, QDialog, AdBlockDialog { 
 	background-color: #202020; 
 	border: none;
-}
-/*Adblock Dialog Options Button*/
-AdBlockDialog #buttonOptions { 
-	qproperty-icon: url(images/adblock.png);
-	qproperty-iconSize: 22px;
-	min-width: 112px;
-    min-height: 26px;
 }
 
 /*Preferences Tab Bars*/ 
